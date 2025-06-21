@@ -1,3 +1,5 @@
 fastapi
 pandas
 numpy
+psycopg
+sqlalchemy
