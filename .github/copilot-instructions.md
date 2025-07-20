@@ -13,6 +13,8 @@
 ### Tech Stack
 Frontend:
     - HTML + Tailwind CSS + Alpine  +  HTMX + JS
+    - Deep and dark blue is the primary color
+    - Use Material Icons and Material Design for UI components with the primary color I mentioned
 
 Backend:
     - Python + FastAPI + SQLAlchemy + PostgreSQL + Mongo + Redis + Celery + Spark
