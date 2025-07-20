@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@4/dist/clerk.browser.js"></script>
+  <style>
+    body {
+      background-color: #0a192f; /* dark background */
+      font-family: Calibri, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#0a192f]">
+  <div class="w-full max-w-sm bg-white rounded-xl shadow-lg p-8">
+    <h1 class="text-2xl font-bold text-center text-[#1e40af] mb-6">Sign In</h1>
+    <div id="clerk-sign-in"></div>
+  </div>
+  <script>
+    window.CLERK_PUBLISHABLE_KEY = 'pk_test_ZXhwZXJ0LWNyaWNrZXQtMS5jbGVyay5hY2NvdW50cy5kZXYk';
+    const publishableKey = window.CLERK_PUBLISHABLE_KEY;
+    window.Clerk.load({
+      publishableKey
+    }).then(() => {
+      window.Clerk.mountSignIn(document.getElementById('clerk-sign-in'));
+    });
+  </script>
+</body>
+</html>

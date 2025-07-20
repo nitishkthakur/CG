@@ -1,5 +1,4 @@
-fastapi
+psycopg2
 pandas
 numpy
-psycopg
-sqlalchemy
+pyspark
